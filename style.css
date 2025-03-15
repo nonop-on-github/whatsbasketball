@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+}
+
+.float-right {
+float:left;
+}
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #555;
+  transition: transform 0.3s;
+}
