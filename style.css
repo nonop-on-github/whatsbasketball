@@ -56,21 +56,21 @@ float:left;
 }
 
 .music-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #333;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-  z-index: 9999;
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  background-color: #333 !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
+  transition: transform 0.3s !important;
+  z-index: 9999 !important;
 }
 
 .music-button:hover {
