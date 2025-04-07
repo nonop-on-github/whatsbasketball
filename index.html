@@ -14,7 +14,7 @@
   <title>Découverte - Le Basketball</title>
 
   <script src="script.js"></script>
-  
+
   <style>
     body {
       margin: 0;
@@ -33,14 +33,14 @@
       padding: 0;
       font-family: Space Grotesk, sans;
     }
-    
+
     h1 {
       margin: 0;
       padding: 0;
       font-family: Climate Crisis, sans-serif;
       letter-spacing: 2px;
     }
-    
+
     .icon {
       width: 20px;
       height: auto;
@@ -125,7 +125,7 @@
 
     .logo:hover {
       transform: scale(1.2);
-      
+
   h6 {
         margin: 0;
         padding: 0;
@@ -134,6 +134,24 @@
     font-weight: 400;
     font-style: normal;
       }
+
+    .music-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      border-radius: 50%; /* Makes it round */
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .music-button i {
+      font-size: 24px;
+      color: #333; /* Example color */
+    }
+
 
   </style>
   <div class="nav-container">
@@ -149,8 +167,8 @@
       </ul>
     </nav>
   </div>
-  
-    
+
+
   <video autoplay muted>
     <source src="media/headervideo.mp4" type="video/mp4">
 
@@ -158,35 +176,35 @@
 </head>
 
 <body>
-  
-  <div class="basketball"></div>
- 
 
-  
+  <div class="basketball"></div>
+
+
+
 </section>
   <section id="section1">
-   
+
     <p class="float-right">
-     
+
       <img src="media/naismith_james.jpg" width="250" height="317"/>
-       
+
     </p>
-   
-     
+
+
 
     <h2>L'Histoire du Basketball</h2>
     <p>
       Le <b>basketball</b> a été créé par <b>James Naismith</b>, un Canadien, en <b>1891</b>. Il est pratiqué par <b>450 millions de personnes</b> dans le monde. La <b>NBA</b>, la ligue la plus célèbre, a été fondée en <b>1946</b> à <b>New York</b>. Elle compte actuellement <b>30 équipes</b>, dont des célèbres comme les <i>Lakers</i> et les <i>Celtics</i>. La <i>saison régulière</i> va d'<b>octobre à avril</b>, avec chaque équipe disputant <b>82 matchs</b>. Les huit meilleures de chaque conférence vont aux <i>séries éliminatoires</i>, qui se déroulent en élimination <i>directe</i>. La NBA a produit des légendes comme <b>Michael Jordan</b> et <b>LeBron James</b>. Chaque année, il y a un <b>All-Star Game</b> et d'autres événements comme le <b>Slam Dunk Contest</b>. La ligue a une large audience internationale et est engagée dans des <b>initiatives sociales</b>.
-       
-    </p>
-     
 
-  
+    </p>
+
+
+
   </section>
-  
+
 
   <section id="section2">
-     
+
     <br>
     <p class="float-right">
 
@@ -199,8 +217,8 @@ En conclusion, le basketball se présente comme un allié précieux pour ceux qu
   </section>
     <section id="section3">
        <br>
-     
-      
+
+
 <h2>Les Légendes du basketball Américain</h2>
  <b> Kobe Bryant, Micheal Jordan, Lebron James, Tony Parker, Shaquille O'neal</b> et tant d'autres font partie des plus grandes Légendes du Basketball mondial. Pour de nombreuses raisons dont l'amélioration du basketball nottament par leurs jeux explosifs et rapides, il ont contribués ainsi en donnent une image nouvelle au Basketball Américain.
       <br>
@@ -209,15 +227,15 @@ En conclusion, le basketball se présente comme un allié précieux pour ceux qu
     La NBA est la ligue de Basketball américaine. Elle réunit 30 équipes. La NBA est la meilleure ligue de basket au monde.
       <br>
       <br>
-  
+
   </section>
   <section id="section4">
     <br>
-  
+
   <center><h1 style="color:rgba(255, 171, 1);">Les 10 meilleurs dunks de la NBA</h1></center>
   <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ue1NT3QhuVU?si=JyaofshpyteeIBb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
   </section>
-     
+
     </section>
   <section id="section5">
      <br>
@@ -227,13 +245,32 @@ En conclusion, le basketball se présente comme un allié précieux pour ceux qu
     <a href="https://fr.m.wikipedia.org/wiki/Basket-ball">Wikipedia</a>
     <br>
   <a href="https://youtu.be/ue1NT3QhuVU">Vidéo YouTube de la NBA</a>
-    
+
     <footer>
       <p style="color: #fff; background-color: #333; padding: 10px; text-align: center;">© 2025 - Tous droits réservés<br><button onclick="window.location.href='mailto:noe.mangin@icloud.com';">Contact</button></p>
-      
+
       <br>
     </footer>
+
+    <button class="music-button" id="musicBtn">
+      <i class="fas fa-music"></i>
+    </button>
+    <audio id="bgMusic" loop>
+      <source src="media/background-music.mp3" type="audio/mp3">
+    </audio>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script>
+      const musicBtn = document.getElementById('musicBtn');
+      const bgMusic = document.getElementById('bgMusic');
+
+      musicBtn.addEventListener('click', () => {
+        if (bgMusic.paused) {
+          bgMusic.play();
+        } else {
+          bgMusic.pause();
+        }
+      });
+    </script>
 </body>
-
-
 </html>
